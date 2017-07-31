@@ -1,0 +1,4 @@
+ignore_parent = true
+
+global[] = "stack"
+

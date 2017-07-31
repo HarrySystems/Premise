@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} -f
+	RewriteRule (.*) global/tunnel/tunnel.php?tunnel=$1& [PT,L,QSA]
+	#RewriteRule (.*) global/tunnel/teste.php [PT,L,QSA]
+</IfModule>
+
+# block access to files without extension
+#	<FilesMatch "^\.(.*)$">
+#		Order allow,deny
+#		Deny from all
+#	</FilesMatch>
+
+#<IfModule mod_php5.c>
+#	php_value auto_prepend_file none
+#	php_value auto_append_file none
+#</IFModule>
+
+Options All +Indexes
