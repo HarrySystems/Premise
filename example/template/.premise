@@ -1,6 +1,0 @@
-local[] = "vendor/bootstrap"
-local[] = "vendor/loadassets"
-
-prepend[] = "assets/css/index.css"
-prepend[] = "head.php"
-append[] = "foot.php"
