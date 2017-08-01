@@ -1,0 +1,5 @@
+prepend[] = "php/meta.php"
+prepend[] = "css/bootstrap.min.css"
+prepend[] = "js/bootstrap.min.js"
+
+local[] = "../jquery"
